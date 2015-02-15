@@ -1,0 +1,2 @@
+%{"cryptex": {:hex, :cryptex, "0.0.1"},
+  "ezcryptex": {:hex, :ezcryptex, "0.0.1"}}

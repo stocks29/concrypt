@@ -5,7 +5,8 @@ defmodule Concrypt.Mixfile do
     [app: :concrypt,
      version: "0.0.1",
      elixir: "~> 1.0",
-     deps: deps]
+     deps: deps,
+     mod: {Concrypt, []}]
   end
 
   # Configuration for the OTP application
