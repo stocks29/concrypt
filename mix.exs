@@ -26,6 +26,9 @@ defmodule Concrypt.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [
+      {:pkcs7, git: "https://github.com/camshaft/pkcs7.erl.git"},
+      {:key_generator, git: "https://github.com/DisruptiveMind/elixir-pbkdf2.git"}
+    ]
   end
 end

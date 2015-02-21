@@ -24,10 +24,12 @@ defmodule Concrypt.Server do
   ## Server Callbacks
 
   def init([env_key, env_iv]) do
+    Logger.debug("starting concrypt server with env_key=#{env_key} env_iv=#{env_iv}")
     {:ok, _decrypter(env_key, env_iv)}
   end
 
   def handle_cast({:load, file}, decrypter) do
+    Logger.debug("loading file=#{file}")
     SF.stream!(file)
     |> Stream.map(&(_decrypt(&1, decrypter)))
     |> Enum.each(&_put_env/1)

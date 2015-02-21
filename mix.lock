@@ -1,2 +1,5 @@
 %{"cryptex": {:hex, :cryptex, "0.0.1"},
-  "ezcryptex": {:hex, :ezcryptex, "0.0.1"}}
+  "ezcryptex": {:hex, :ezcryptex, "0.0.1"},
+  "key_generator": {:git, "https://github.com/DisruptiveMind/elixir-pbkdf2.git", "4709b705c9890d46c0402addc72cb340181a4089", []},
+  "pkcs7": {:git, "https://github.com/camshaft/pkcs7.erl.git", "b1307dc538302e94ba1f0a7fde13b76d867dd5d4", []},
+  "proper": {:git, "https://github.com/manopapad/proper.git", "87e4a56e8f97f1972cde44ed30500daa4641595f", [ref: "v1.1"]}}
